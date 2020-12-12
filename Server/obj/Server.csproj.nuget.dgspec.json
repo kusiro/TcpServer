@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\coffee\\Desktop\\TcpServer\\Server\\Server\\Server.csproj": {}
+    "D:\\Web\\TcpServer\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\coffee\\Desktop\\TcpServer\\Server\\Server\\Server.csproj": {
+    "D:\\Web\\TcpServer\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\coffee\\Desktop\\TcpServer\\Server\\Server\\Server.csproj",
+        "projectUniqueName": "D:\\Web\\TcpServer\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Users\\coffee\\Desktop\\TcpServer\\Server\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\coffee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\coffee\\Desktop\\TcpServer\\Server\\Server\\obj\\",
+        "projectPath": "D:\\Web\\TcpServer\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\jacky\\.nuget\\packages\\",
+        "outputPath": "D:\\Web\\TcpServer\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\coffee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jacky\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +29,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +41,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -50,12 +52,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.10, 3.1.10]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
