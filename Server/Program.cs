@@ -96,6 +96,7 @@ namespace TcpCompare
             byte[] ClientDataByte = new byte[bufferSize];
             stream = newClient.GetStream();
             stream.Read(ClientDataByte, 0, bufferSize);
+            // string testStr = Encoding.ASCII.GetString(ClientDataByte, 0, bufferSize);
 
             MachineNum = Int32.Parse(Encoding.ASCII.GetString(ClientDataByte, 0, bufferSize));
             Console.WriteLine("機台編號: " + MachineNum);
@@ -104,9 +105,10 @@ namespace TcpCompare
             m_SendingThread.Start();
           }
         }
-        catch
+        catch(Exception e)
         {
-          Console.WriteLine("Client disconnect\n");
+          Console.WriteLine(e.Message);
+          //Console.WriteLine("Client disconnect\n");
           //m_SendingThread.Join();
         }
       }
@@ -133,9 +135,9 @@ namespace TcpCompare
       for (int i = 0; i < 2; i++)
       {
         if (i == 0)
-          folder = new DirectoryInfo("D:\\Web\\TcpServer\\Machine Client\\M00" + MachineNum + "L");
+          folder = new DirectoryInfo("E:\\Web\\TcpServer\\Machine Client\\M00" + MachineNum + "L");
         else
-          folder = new DirectoryInfo("D:\\Web\\TcpServer\\Machine Client\\M00" + MachineNum + "R");
+          folder = new DirectoryInfo("E:\\Web\\TcpServer\\Machine Client\\M00" + MachineNum + "R");
 
         var fileNames = folder.GetFiles("*.png");
         foreach (var fn in fileNames)
@@ -167,8 +169,10 @@ namespace TcpCompare
               bool success = false;
               try
               {
-                Thread.Sleep(200);
+                Thread.Sleep(500);
                 success = client.SendImageData(file.data);
+                Thread.Sleep(200);
+                success = client.SendImageData(Encoding.ASCII.GetBytes(ehi));
                 Console.WriteLine("Sending File: " + ehi + ".png");
               }
               catch
@@ -183,7 +187,7 @@ namespace TcpCompare
                 {
                   lock (m_Clients)
                   {
-                    Console.WriteLine("Remove Client");
+                    // Console.WriteLine("Remove Client");
                     m_Clients.Remove(client);
                   }
                 }

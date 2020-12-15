@@ -63,3 +63,16 @@ D:\Web\TcpServer\Server\bin\Debug\netcoreapp3.1\Server.runtimeconfig.dev.json
 D:\Web\TcpServer\Server\bin\Debug\netcoreapp3.1\Server.dll
 D:\Web\TcpServer\Server\bin\Debug\netcoreapp3.1\Server.pdb
 D:\Web\TcpServer\Server\obj\Debug\netcoreapp3.1\Server.genruntimeconfig.cache
+E:\Web\TcpServer\Server\bin\Debug\netcoreapp3.1\Server.exe
+E:\Web\TcpServer\Server\bin\Debug\netcoreapp3.1\Server.deps.json
+E:\Web\TcpServer\Server\bin\Debug\netcoreapp3.1\Server.runtimeconfig.json
+E:\Web\TcpServer\Server\bin\Debug\netcoreapp3.1\Server.runtimeconfig.dev.json
+E:\Web\TcpServer\Server\bin\Debug\netcoreapp3.1\Server.dll
+E:\Web\TcpServer\Server\bin\Debug\netcoreapp3.1\Server.pdb
+E:\Web\TcpServer\Server\obj\Debug\netcoreapp3.1\Server.csprojAssemblyReference.cache
+E:\Web\TcpServer\Server\obj\Debug\netcoreapp3.1\Server.AssemblyInfoInputs.cache
+E:\Web\TcpServer\Server\obj\Debug\netcoreapp3.1\Server.AssemblyInfo.cs
+E:\Web\TcpServer\Server\obj\Debug\netcoreapp3.1\Server.csproj.CoreCompileInputs.cache
+E:\Web\TcpServer\Server\obj\Debug\netcoreapp3.1\Server.dll
+E:\Web\TcpServer\Server\obj\Debug\netcoreapp3.1\Server.pdb
+E:\Web\TcpServer\Server\obj\Debug\netcoreapp3.1\Server.genruntimeconfig.cache
